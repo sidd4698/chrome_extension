@@ -1,0 +1,14 @@
+{
+        "manifest_version": 2,
+        "name": "Word Replacer",
+        "version": "1.0",
+        "description": "Replace [word 1] with [word 2].",
+        "content_scripts": 
+        [
+            {
+                "matches": ["*://*/*"],
+                "js": ["content_script.js"],
+                "run_at": "document_end"
+            }
+        ]
+    }
